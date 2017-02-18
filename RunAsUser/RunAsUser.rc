@@ -1,0 +1,165 @@
+//Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_RUN DIALOG DISCARDABLE  0, 0, 187, 64
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Executing and waiting process...",IDC_STATIC,47,27,96,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RUNASUSER DIALOG DISCARDABLE  100, 100, 525, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Run as user sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Run",IDOK,197,132,50,14
+    PUSHBUTTON      "Close",IDCANCEL,256,132,50,14
+    LTEXT           "&Type of authorization:",IDC_STATIC,7,8,65,8
+    COMBOBOX        IDC_RUNASUSER_TYPE,79,7,125,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Executable file:",IDC_STATIC,7,24,46,8
+    EDITTEXT        IDC_RUNASUSER_EXE,79,22,199,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_RUNASUSER_EXE_BROWSE,278,22,28,14
+    LTEXT           "&Command line:",IDC_STATIC,7,41,46,8
+    EDITTEXT        IDC_RUNASUSER_CMD,79,39,227,14,ES_AUTOHSCROLL
+    LTEXT           "Startup director&y:",IDC_STATIC,7,58,51,8
+    EDITTEXT        IDC_RUNASUSER_DIR,79,56,199,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_RUNASUSER_DIR_BROWSE,278,56,28,14
+    LTEXT           "&Domain:",IDC_STATIC,7,76,26,8
+    EDITTEXT        IDC_RUNASUSER_DOMAIN,36,74,62,14,ES_AUTOHSCROLL
+    LTEXT           "&User name:",IDC_STATIC,101,76,36,8
+    EDITTEXT        IDC_RUNASUSER_USERNAME,139,74,62,14,ES_AUTOHSCROLL
+    LTEXT           "&Password:",IDC_STATIC,205,76,33,8
+    EDITTEXT        IDC_RUNASUSER_PASSWORD,244,74,62,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Des&ktop name:",IDC_STATIC,7,94,47,8
+    EDITTEXT        IDC_RUNASUSER_DESKTOP,60,92,84,14,ES_AUTOHSCROLL
+    LTEXT           "&Session:",IDC_STATIC,172,94,27,8
+    COMBOBOX        IDC_RUNASUSER_SESSION,204,92,48,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Window show state:",IDC_STATIC,7,111,60,8
+    COMBOBOX        IDC_RUNASUSER_STATE,71,110,97,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Impersonate logged on user",IDC_RUNASUSER_IMPERSONATE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,111,96,10
+    CONTROL         "Run with &highest privileges (Windows Vista and later)",
+                    IDC_RUNASUSER_ELEVATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,129,172,10
+    GROUPBOX        "Execution &log",IDC_STATIC,315,7,203,140
+    EDITTEXT        IDC_RUNASUSER_EXELOG,318,17,197,128,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_RUNASUSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 518
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+	"#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
